@@ -15,8 +15,16 @@
       'params':[true,false,1]\
     },\
     {\
+      'name':'SD',\
+      'params':[true,1000,10,'chimes',true]\
+    },\
+    {\
       'name':'DS3231',\
-      'params':[10, false, true]\
+      'params':[11, false, true]\
+    },\
+    {\
+      'name':'SHT31D',\
+      'params':'default'\
     },\
     {\
       'name':'TSL2591',\
@@ -26,6 +34,14 @@
       'name':'SDIManager',\
       'params':'default'\
     },\
+    {\
+			'name':'WiFi',\
+			'params':['OSU_Access','']\
+		},\
+    {\
+			'name':'MQTTPub',\
+			'params':['cas-mosquitto.biossys.oregonstate.edu', 1883, 'WeatherChimes', 'User', 'password']\
+		},\
     {\
       'name':'Analog',\
       'params':[\
